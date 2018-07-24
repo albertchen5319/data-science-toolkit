@@ -61,11 +61,26 @@ Reconnect to our ubuntu server, and type tmux.
 
 6. Obtaining the correct Docker image
 
-
+We use tmux for a more stable connection.  
+In tmux, we will now pull the docker jupyter data science image  
+docker pull jupyter/datascience-notebook  
+docker run -d -p 443:8888 -v /home/ubuntu:/home/jovyan jupyter/datascience-notebook  
+-d is detached, allows us to close the shell without shutting down our jupyter server  
+-p is attaching the appropriate ports. the pattern is host:docker  
+Docker can not be worried about the state. Containers need to be stateless.  
+This immediately creates the files and it is a two way connection and immediate.  
 
 7. Running the correct Docker image as a container
 
-
+Now we need to get the token for our docker container. There are two ways.  
+docker ps  
+Look at the container ID, and note the first few characters.  
+docker logs <containerID>  
+OR  
+docker exec <containerID> jupyter notebook list  
+Grab the token. Then go to your browser. In the URL box, enter <IP>:443  
+Paste in your container token.  
+Success!  
 
 8. Jupyter notebook security concerns
 
@@ -81,3 +96,6 @@ Reconnect to our ubuntu server, and type tmux.
 
 11. A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three different kinds of EC 2 instances.
 
+For t2 micro, it is $0.0116 per hour. So, for a month, it will be $8.35. For three months, $25.05.
+For m4 large, it is $0.10 per hour. So, for a month, it will be $72.00. For three months, $216.00.
+For c5 large, it is $0.085 per hour. So, for a month, it will be $61.20. For three months, $183.60.

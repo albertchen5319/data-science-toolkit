@@ -96,6 +96,6 @@ Success!
 
 11. A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three different kinds of EC 2 instances.
 
-For t2 micro, it is $0.0116 per hour. So, for a month, it will be $8.35. For three months, $25.05.
-For m4 large, it is $0.10 per hour. So, for a month, it will be $72.00. For three months, $216.00.
-For c5 large, it is $0.085 per hour. So, for a month, it will be $61.20. For three months, $183.60.
+For t2 micro, it is $0.0116 per hour. So, for a month, it will be $8.35. For three months, $25.05.  
+For m4 large, it is $0.10 per hour. So, for a month, it will be $72.00. For three months, $216.00.  
+For c5 large, it is $0.085 per hour. So, for a month, it will be $61.20. For three months, $183.60.  

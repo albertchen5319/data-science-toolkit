@@ -84,7 +84,7 @@ Success!
 
 8. Jupyter notebook security concerns
 
-
+Anyone can access our jupyter notebook, but only we will have access to it with our private SSH.
 
 9. Anything else I may have forgotten ...
 
